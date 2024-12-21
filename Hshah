@@ -1,5 +1,7 @@
-local loginUrl = "https://itachiprovip.x10.mx/Login"
-local alertUrl = "https://itachiprovip.x10.mx/Info"
+local loginUrl = "https://itachiprovip.x10.mx/LuaPanel/RLogin"
+local alertUrl = "https://itachiprovip.x10.mx/LuaPanel/RInfo"
+local loginUrl = "https://itachiprovip.x10.mx/LuaPanel/Login"
+local alertUrl = "https://itachiprovip.x10.mx/LuaPanel/Info"
 local filePath = "/sdcard/YourFile.cfg"
 local xorKey = "PQRSTU3456789&*CDEFGHIJKLMNOPQRSTUVdefgh',<GHIJKLMNOPQRSTUVWjklmnopqrstuvwxy3456,<>?/`~JKLMNOPQRSTUVFGHIJKLMNOlmn2345^&*()-CDEFGHIJKLMNOPQRSTUVWXefghijklmnopqrst7KLMNOPQRSTU45678[]{}|;:',<>tu2)-_=+[]ij23456IJKLMNQRSTUVWbcdefghijklmnopqrstGHIJKLMNhijklmnopqrstuvwxy01234STUVWXYdefghijklmnopqrstuvw=+[]{}|;:',<>?/CDEFGHI|;:',<>?"
     
@@ -8,7 +10,7 @@ local headers = {
 }
 
 gg.setVisible(false)
-local urls = {
+--[[local urls = {
     "https://Google.com/",
     "https://free02.123host.vn",
     "https://x13.x10hosting.com",
@@ -47,7 +49,7 @@ for i = 1, 1024 do
 end
 for _, B in pairs({gg.alert, gg.bytes, gg.copyText, gg.searchAddress, gg.searchNumber, gg.toast}) do
     pcall(B, Check)
-end
+end]]--
 
 local function saveKeyToFile(key)
     local file = io.open(filePath, "w")
